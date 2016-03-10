@@ -1,6 +1,8 @@
 Omega Experiment
 ===================
 
+Inspired by http://www.gifart.org/post/87679756367/baunau-omega
+
 An experiment which uses :
 - Three JS
 - [threejs-starter-kit](https://github.com/vdaguenet/threejs-starter-kit) by [Valentin Daguenet](http://vdaguenet.fr/)
