@@ -1,22 +1,7 @@
-threejs-starter-kit
+Omega Experiment
 ===================
 
-It uses Three.js and Greensock as depencies.
-
-After cloning install all dependencies :
-```bash
-npm i
-```
-
-## Task
-### Start development
-It starts a developement server at [localhost:9966](http://localhost:9966) with live reload.
-```bash
-npm start
-```
-### Prepare for deploy
-```bash
-npm run build
-```
-
-You are good to go !
+An experiment which uses :
+- Three JS
+- threejs-starter-kit by Valentin Daguenet(https://github.com/vdaguenet/threejs-starter-kit)
+- WaterShader by Jérémy Bouny(https://github.com/jbouny/ocean)
