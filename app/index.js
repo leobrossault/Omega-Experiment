@@ -12,13 +12,13 @@ domready(() => {
   document.body.appendChild(webgl.renderer.domElement);
 
   // GUI settings
-  gui = new dat.GUI();
-  gui.add(webgl.params, 'cSphere', 0, 1);
-  gui.add(webgl.params, 'pSphere', 0, 6);
-  gui.add(webgl.params, 'cwaterLights', 0, 1);
-  gui.add(webgl.params, 'pwaterLights', 0, 6);
-  gui.addColor(webgl.params, 'color');
-  gui.add(webgl.params, 'controls');
+  // gui = new dat.GUI();
+  // gui.add(webgl.params, 'cSphere', 0, 1);
+  // gui.add(webgl.params, 'pSphere', 0, 6);
+  // gui.add(webgl.params, 'cwaterLights', 0, 1);
+  // gui.add(webgl.params, 'pwaterLights', 0, 6);
+  // gui.addColor(webgl.params, 'color');
+  // gui.add(webgl.params, 'controls');
 
   // handle resize
   window.addEventListener('resize', resizeHandler);
