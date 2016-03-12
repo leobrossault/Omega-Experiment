@@ -16,7 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "dat-gui": "*",
-    "gsap": "*",
     "raf": "*",
     "three": "*"
   },
@@ -26,6 +25,7 @@
     "babelify": "*",
     "browserify": "*",
     "budo": "*",
+    "domready": "^1.0.8",
     "glslify": "*",
     "stripify": "*",
     "uglifyjs": "*"

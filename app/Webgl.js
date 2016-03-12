@@ -120,12 +120,6 @@ export default class Webgl {
     this.controls = new THREE.OrbitControls(this.camera);
   }
 
-  initPostprocessing() {
-    if (!this.params.usePostprocessing) { return; }
-
-    /* Add the effect composer of your choice */
-  }
-
   resize(width, height) {
     if (this.composer) {
       this.composer.setSize(width, height);
@@ -144,11 +138,7 @@ export default class Webgl {
       this.controls.enabled = false;
     }
 
-    if (this.params.usePostprocessing) {
-      console.warn('WebGL - No effect composer set.');
-    } else {
-      this.renderer.render(this.scene, this.camera);
-    }
+    this.renderer.render(this.scene, this.camera);
 
     this.sea.update();
     this.halo.update(this.params.cSphere, this.params.pSphere);
