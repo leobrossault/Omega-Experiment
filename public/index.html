@@ -14,6 +14,17 @@
   </style>
 </head>
 <body>
+  <script id="light-fragment" type="x-shader/x-vertex">
+    varying vec2 vUv;
+    uniform float time;
+    ​
+    void main() {
+        float coef = mod( vUv.y + time / 250.0, 1.0 );
+        float opacity = step( 0.09, mod( coef, 0.2 ) );
+    ​
+        gl_FragColor = vec4( 0.0, 0.0, 0.0, opacity );
+    }
+  </script>
   <script id="halo-vertex" type="x-shader/x-vertex">
     uniform vec3 viewVector;
     uniform float c;

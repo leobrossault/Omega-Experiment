@@ -8,7 +8,12 @@ let gui;
 
 domready(() => {
   // webgl settings
-  webgl = new Webgl(window.innerWidth, window.innerHeight);
+  if (window.innerHeight < 700) {
+    webgl = new Webgl(window.innerWidth, 700);
+  } else {
+    webgl = new Webgl(window.innerWidth, window.innerHeight);
+  }
+
   document.body.appendChild(webgl.renderer.domElement);
 
   // GUI settings

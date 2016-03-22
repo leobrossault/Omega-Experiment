@@ -6,7 +6,8 @@ export default class Plane extends THREE.Object3D {
     super();
 
     // Load textures
-    this.waterNormals = new THREE.ImageUtils.loadTexture('../assets/waternormals.jpg');
+    THREE.ImageUtils.crossOrigin = '';
+    this.waterNormals = THREE.ImageUtils.loadTexture('http://leobrossault.github.io/images/waternormals.jpg');
     this.waterNormals.wrapS = this.waterNormals.wrapT = THREE.RepeatWrapping;
 
     this.directionalLight = new THREE.DirectionalLight(0xe92121, 1);

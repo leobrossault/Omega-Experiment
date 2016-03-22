@@ -111,6 +111,17 @@ export default class Webgl {
           break;
       }
 
+      // BACKGROUND
+      // this.geomBack = new THREE.PlaneGeometry(width, 100, 32);
+      // this.matBack = new THREE.MeshPhongMaterial({
+      //   color: 0x342C3C,
+      // });
+      // this.back = new THREE.Mesh(this.geomBack, this.matBack);
+      // this.scene.add(this.back);
+
+      // this.light = new THREE.PointLight(0x1059d3, 1, 200);
+      // this.scene.add(this.light);
+
       this.scene.add(this.waterLight);
       this.waterLights.push(this.waterLight);
       this.scene.add(this.waterLightHalo);
